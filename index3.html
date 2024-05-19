@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <link rel = "stylesheet" href="sign.css">
+    
+</head>
+<body>
+    <form>
+
+        <div class ="formBox">
+            <label for ="email">Email</label>
+            <input type="text" id = "email" placeholder="Email"/>
+        </div>
+        <div class ="formBox">
+            <label for ="pass">Password</label>
+            <input type="text" id = "pass" placeholder="Pass"/>
+        </div>
+        <div class="formBox">
+            <button id="btn">Register</button>
+        </div>
+        <div id="msg">
+            <pre></pre>
+        </div>
+
+    
+    </form>
+    <script>
+        let data = [];
+        const adddata = (ev)=>{
+            ev.preventDefault();
+            let dat = {
+                //id:Date.now(),
+                email:document.getElementById('email').value,
+                pass:document.getElementById('pass').value
+            }
+            data.push(dat);
+            document.forms[0].reset();
+            
+            //document.querySelector('form').reset();
+
+           // console.warn('added',{data});
+            //let pre = document.querySelector('#msg pre');
+            //pre.textContent = '\n' + JSON.stringify(data, '\t' , 2);
+
+            localStorage.setItem('Data' , JSON.stringify(data));
+
+            alert("Registered successfully");
+            
+        }
+        document.addEventListener('DOMContentLoaded',()=>{
+            document.getElementById('btn').addEventListener('click',adddata);
+
+        });
+    </script>
+
+</body>
+</html>

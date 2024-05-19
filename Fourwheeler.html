@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slot Booking</title>
+        <link rel = "stylesheet" href="Fourwheeler.css">
+    </head>
+    <body>
+        <div class="slot selection">
+            <div class="set">
+                <label>Select slot type</label>
+            </div>
+            <select id="vehicle">
+                <option value="20">More than 1 hr -- Rs.20/hr</option>
+                <option value="40">For 1 hr or less -- Rs.40/hr</option>
+                
+            </select>
+
+        
+        </div>
+        <ul class="showcase">
+            <li>
+                <div class="seats"></div>
+                    <h3>Empty</h3>
+                
+            </li>
+            <li>
+                <div class="seats selected"></div>
+                    <h3>Selected</h3>
+                
+            </li>
+            <li>
+                <div class="seats occupied"></div>
+                    <h3>Occupied</h3>
+
+                
+            </li>
+        </ul>
+
+        <div class="container">
+            <!--<div class="slots"></div>-->
+            <div class="row">
+                <div class="seats occupied"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                
+
+            </div>
+            <div class="row">
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+
+            </div>
+            <div class="row">
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                
+
+            </div>
+            <div class="row">
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats"></div>
+                <div class="seats occupied"></div>
+
+            </div>
+        
+        </div>
+        <p class = "text1">
+            ENTRY/EXIT
+        </p>
+        <p class = "text2">
+            <button class="btn"><a href="thank.html">Pay</a></button>
+        </p>
+        <p class = "text">
+            You have selected <span id="count">0</span> slot for a price of Rs <span id="total">0</span>
+
+        </p>
+
+        
+
+
+        <script src = "Fourwheeler.js"></script>
+    </body>
+</html>

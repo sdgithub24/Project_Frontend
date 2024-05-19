@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+        
+    </head>
+    <body>
+       <h1>List</h1>
+       
+       <br>
+       
+       <br>
+       <button onclick = "view();" >Read Storage</button>
+       
+        <button class="btn" ><a href="index.html">Logout</a></button>
+       
+        
+    </body>
+    <script>
+        function view(){
+            console.log(window.localStorage.getItem('Data'));
+            //let reString = localStorage.getItem("Data")
+            //let retArray = JSON.parse(reString)
+            //for (var i =0 ;i<=localStorage.length;i++){
+            //    console.warn(retArray[i]['email'],retArray[i]['pass']);
+           
+            //}
+        }
+        
+    </script>
+</html>
